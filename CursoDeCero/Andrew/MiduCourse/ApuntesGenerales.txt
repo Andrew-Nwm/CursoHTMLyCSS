@@ -1,0 +1,37 @@
+**Apuntes Generales del curso de MiduDev**
+
+1. HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Se encarga de definir la estructura de los elementos en una página web, como encabezados, párrafos, listas, enlaces, imágenes, formularios, entre otros.
+
+2. La extensión de los archivos HTML es .html. Cuando creas un archivo HTML, puedes abrirlo en un navegador web para ver cómo se renderiza y se muestra el contenido.
+
+3. HTML5 es la quinta versión del lenguaje de marcado HTML. 
+
+**Etiquetas**
+
+1. En cuanto a las etiquetas de títulos, existen 6 niveles:
+    a. h1
+    b. h2
+    c. h3
+    d. h4
+    e. h5
+    f. h6
+
+2. Para crear párrafos, tenemos que usar la etiqueta <p>Aquí va el contenido del párrafo</p>
+
+**Elementos anidados**
+
+1. El elemento <strong></strong> es usado para dar mayor relevancia a una o varias palabras en específico. Utilizado principalmente en títulos y párrafos.
+
+2. El elemento <ul></ul> es usado para realizar listas desorganizadas (unordered list). Para añadir elementos a este elemento, usamos la etiqueta <li></li> que actúa como elemento de la lista (list item).
+
+3. 
+
+**Elementos reemplazables**
+1. imágenes
+2. input
+3. br
+
+Dato sobre los atributos: Las comillas en los atributos no son obligatorios, a no se que se tenga un espacio. Lo recomendable es siempre ponerlas.
+
+
+
