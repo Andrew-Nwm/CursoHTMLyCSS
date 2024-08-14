@@ -6,6 +6,36 @@
 
 3. HTML5 es la quinta versión del lenguaje de marcado HTML. 
 
+4. Para poner comentarios en el html, se pone de la siguiente forma: 
+<!-- This is a comment in HTML -->
+
+5. La estructura básica se compone de lo siguiente:
+    A. Lo primero que debe llevar el archivo html es el nodo:
+        <!DOCTYPE html> que indica que el archivo es un documento HTML5.
+    B. La declaración del inicio del documento es la siguiente:
+        <html lang="es">
+    C. El contenido raíz del código se divide en dos:
+        - <head> que contiene información sobre el documento, como por ejemplo:
+            a. el título 
+            b. el autor
+            c. el encabezado
+            d. metadatos generales como:
+                - <meta charset="utf-8"> el charset se usa como la codificación que se va a utilizar.
+                - <meta name="viewport" content="width=device-width"> el viewport se usa para settear el ancho de la pantalla en base al dispositivo 
+                - <meta name="robots" content="index, follow"> la etiqueta robots se usa principalmente para ayudar a los motores de búsqueda para que entiendan si debe indexarse la página y si se deben seguir los enlaces
+                - <meta name"theme-color" content="codigo hexagonal del color a usar en la barra de arriba">
+                - <link rel="icon" type="image/jpg" href="/images/icon.jpg"> este metadato tiene como propósito establecer el icono de la página en la pestaña de la misma, se usa el link en lugar del meta porque es un "atributo" que está indirectamente está siendo linkeado.
+                - <meta name="description" content="Portfolio de Andrewdev, 1 año de experiencia como diseñador web y programador backend en Java"> este metadato es importante ya que brinda en la web la descripción de la página
+                - el  archivo css
+            e. Metadatos de Open Graph  
+                -  <meta property="og:tittle" content="Portfolio de un diseñador y desarrollador Jr">
+                -  <meta property="og:description" content="Portfolio de AndrewDev - Diseñador y Programador">
+                -  <meta property="og:image" content="/images/yo.jpg">
+                -  <meta property="og:image:alt" content="Imagen de AndrewDev">
+        - <body> que contiene el contenido visible de la página web.
+    D. 
+
+
 **Etiquetas**
 
 1. En cuanto a las etiquetas de títulos, existen 6 niveles:
@@ -24,7 +54,7 @@
 
 2. El elemento <ul></ul> es usado para realizar listas desorganizadas (unordered list). Para añadir elementos a este elemento, usamos la etiqueta <li></li> que actúa como elemento de la lista (list item).
 
-3. 
+3. El elemento <em></em> también se usa para dar relevancia y/o enfasis a una  o varias palabras en específico. A diferencia del strong, este no solo las pone en negrita sino que también les da un estili en cursiva.
 
 **Elementos reemplazables**
 1. imágenes
@@ -33,5 +63,25 @@
 
 Dato sobre los atributos: Las comillas en los atributos no son obligatorios, a no se que se tenga un espacio. Lo recomendable es siempre ponerlas.
 
+**Atributos booleanos**
+1. El atributo hidden tiene como función ocultar el elemento donde se agrega.
 
+**Buenas prácticas**
+1. Utiliza indentación adecuada para mejorar la legibilidad del código HTML.
+2. Utiliza nombres de etiquetas y atributos descriptivos para facilitar el mantenimiento del código.
+3. Evita el uso de estilos en línea y utiliza hojas de estilo externas para mantener el código más limpio y modular.
+4. Utiliza comentarios para explicar el propósito y la funcionalidad de diferentes secciones de código.
+5. Valida tu código HTML utilizando herramientas como el validador de W3C para asegurarte de que cumple con los estándares.
+6. Utiliza etiquetas semánticas apropiadas, como <header>, <nav>, <main>, <section>, <article>, <footer>, para mejorar la accesibilidad y la estructura del contenido.
+7. Evita el uso excesivo de tablas para el diseño de la página y utiliza CSS para lograr diseños más flexibles y responsivos.
+8. Utiliza atributos alt en las etiquetas de imagen para proporcionar texto alternativo en caso de que la imagen no se cargue.
+9. Evita el uso de etiquetas y atributos obsoletos o en desuso, como <font> o el atributo align.
+10. Mantén el código HTML limpio y bien organizado, eliminando etiquetas o atributos innecesarios y evitando código redundante.
+
+**Atributos globales**
+1. id (solo puede existir una vez por página)
+2. class
+
+**MDN**
+1. https://developer.mozilla.org/es/docs/Web/HTML
 
