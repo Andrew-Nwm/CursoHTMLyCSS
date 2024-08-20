@@ -26,14 +26,16 @@
                 - <meta name"theme-color" content="codigo hexagonal del color a usar en la barra de arriba">
                 - <link rel="icon" type="image/jpg" href="/images/icon.jpg"> este metadato tiene como propósito establecer el icono de la página en la pestaña de la misma, se usa el link en lugar del meta porque es un "atributo" que está indirectamente está siendo linkeado.
                 - <meta name="description" content="Portfolio de Andrewdev, 1 año de experiencia como diseñador web y programador backend en Java"> este metadato es importante ya que brinda en la web la descripción de la página
-                - el  archivo css
+                -  <style></style>Esta etiqueta tiene como fin generar estilos css
             e. Metadatos de Open Graph  
                 -  <meta property="og:tittle" content="Portfolio de un diseñador y desarrollador Jr">
                 -  <meta property="og:description" content="Portfolio de AndrewDev - Diseñador y Programador">
                 -  <meta property="og:image" content="/images/yo.jpg">
                 -  <meta property="og:image:alt" content="Imagen de AndrewDev">
+                -  <link rel="alternate" href="https://andrew.dev/en" hreflang="en-US"> Esta etiqueta tiene como fin linkear una página externa, en este caso, hace la conexión a una página con el mismo contenido, excepto que ahora todo estaría en inglés de Estados Unidos.
+                -  <link rel="canonical" href="https://andrew.dev" Esta etiqueta tiene como fin establecer cuál es la página original
         - <body> que contiene el contenido visible de la página web.
-    D. 
+
 
 
 **Etiquetas**
@@ -82,6 +84,106 @@ Dato sobre los atributos: Las comillas en los atributos no son obligatorios, a n
 1. id (solo puede existir una vez por página)
 2. class
 
+**Demás atributos**
+1. src (fuente)
+2. alt (texto alternativo)
+3. rel="noreferrer" este atributo tiene como fin no compartir información de la página fuente como lo pueden ser tokens, contraseñas guardadas, entre otros datos que pueden resultar sensibles.
+
 **MDN**
 1. https://developer.mozilla.org/es/docs/Web/HTML
 
+**HTML semántico**
+1. article: se trata de una elemento que representa una información independiente contenida, es decir, si la información se saca/exporta a otro sitio, sigue teniendo sentido.
+
+2. aside: Este elemento se utiliza para representar contenido que es complementario o no es esencial para el contenido principal de la página. Por lo general, se coloca junto al contenido principal y puede contener información adicional, como anuncios, enlaces relacionados, biografías del autor, etc. El contenido dentro de <aside> no debe ser crucial para la comprensión del contenido principal.
+
+3. <section>: Este elemento se utiliza para agrupar contenido relacionado temáticamente. Puede contener encabezados, párrafos, listas u otros elementos HTML. La idea es que el contenido dentro de una sección tenga un propósito o tema común.
+
+4. <nav>: Este elemento se utiliza para definir una sección de navegación en el documento. Se utiliza para agrupar enlaces que permiten la navegación dentro del sitio web. Por ejemplo, un menú de navegación principal o un menú de enlaces de pie de página.
+
+5. <header>: Este elemento se utiliza para representar la cabecera de una sección o del documento en general. Puede contener elementos como el logotipo del sitio, el título de la página, el encabezado principal, etc.
+
+6. <footer>: Este elemento se utiliza para representar el pie de página de una sección o del documento en general. Puede contener información de contacto, enlaces adicionales, derechos de autor, etc.
+
+7. <main>: Este elemento se utiliza para representar el contenido principal de un documento. Debe haber solo un elemento <main> en todo el documento y se recomienda que esté ubicado dentro del elemento <body>. El contenido dentro de <main> debe ser único y relevante para el propósito principal del documento.
+
+8. <figure> y <figcaption>: Estos elementos se utilizan para agrupar una imagen u otro contenido multimedia junto con su descripción. <figure> se utiliza para envolver el contenido multimedia, mientras que <figcaption> se utiliza para proporcionar una descripción o leyenda para ese contenido.
+
+9. <time>: Este elemento se utiliza para representar una fecha o un tiempo. Puede ser utilizado para mostrar fechas de publicación, eventos, duraciones, etc. Se recomienda utilizar atributos adicionales como datetime para proporcionar información adicional sobre la fecha o el tiempo representado.
+
+10. <details>: se utiliza para crear un elemento desplegable que muestra u oculta contenido adicional. Es especialmente útil cuando se desea proporcionar información adicional o detalles opcionales en una página web.
+
+El elemento <details> debe contener dos elementos secundarios: <summary> y el contenido adicional que se mostrará u ocultará. El elemento <summary> se utiliza para proporcionar un título o una descripción breve del contenido oculto.
+
+**Tipos de enlace**
+1. Enlaces de página web: Se utilizan para enlazar a otras páginas web. Se crean utilizando la etiqueta <a> y el atributo href. Por ejemplo:
+    <a href="https://www.example.com">Enlace a ejemplo.com</a>
+
+2. Enlaces internos: Se utilizan para enlazar a secciones específicas dentro de la misma página web. Se crean utilizando la etiqueta <a> y el atributo href con el valor del ID del elemento al que se desea enlazar. Por ejemplo:
+    <a href="#section1">Enlace a la sección 1</a>
+    ...
+    <h2 id="section1">Sección 1</h2>
+
+3. Enlaces de correo electrónico: Se utilizan para crear enlaces que abren el cliente de correo electrónico del usuario con una dirección de correo electrónico predefinida. Se crean utilizando la etiqueta <a> y el atributo href con el valor "mailto:" seguido de la dirección de correo electrónico. Por ejemplo:
+    <a href="mailto:info@example.com">Enviar correo electrónico</a>
+
+4. Enlaces de descarga: Se utilizan para enlazar a archivos descargables. Se crean utilizando la etiqueta <a> y el atributo href con la ruta del archivo. Por ejemplo:
+    <a href="/path/to/file.pdf" download>Descargar archivo PDF</a>
+
+5. Enlaces de imagen: Se utilizan para enlazar a otras páginas web o archivos utilizando una imagen como enlace. Se crean utilizando la etiqueta <a> y el atributo href junto con la etiqueta <img> para mostrar la imagen. Por ejemplo:
+    <a href="https://www.example.com">
+      <img src="/path/to/image.jpg" alt="Descripción de la imagen">
+    </a>
+
+6. Enlaces de anclaje: Se utilizan para enlazar a un punto específico dentro de la misma página web utilizando un nombre de ancla. Se crean utilizando la etiqueta <a> y el atributo href con el valor del nombre de ancla precedido por "#". Por ejemplo:
+    <a href="#top">Volver arriba</a>
+    ...
+    <h1 id="top">Contenido en la parte superior</h1>
+
+7. Enlaces de llamada telefónica: Se utilizan para crear enlaces que permiten a los usuarios realizar una llamada telefónica directamente desde un dispositivo móvil. Se crean utilizando la etiqueta <a> y el atributo href con el valor "tel:" seguido del número de teléfono. Por ejemplo:
+    <a href="tel:+1234567890">Llamar</a>
+
+8. Enlaces de mensaje de WhatsApp: Se utilizan para crear enlaces que permiten a los usuarios enviar un mensaje de WhatsApp directamente desde un dispositivo móvil. Se crean utilizando la etiqueta <a> y el atributo href con el valor "https://wa.me/" seguido del número de teléfono con el código de país. Por ejemplo:
+    <a href="https://wa.me/1234567890">Enviar mensaje de WhatsApp</a>
+
+9. Enlaces de aplicación de correo electrónico: Se utilizan para abrir una aplicación de correo electrónico específica en un dispositivo móvil. Se crean utilizando la etiqueta <a> y el atributo href con el valor "mailto:" seguido del esquema de la aplicación de correo electrónico. Por ejemplo:
+    <a href="mailto:info@example.com?subject=Consulta">Enviar correo electrónico</a>
+
+10. Enlaces de aplicación de mensajería: Se utilizan para abrir una aplicación de mensajería específica en un dispositivo móvil. Se crean utilizando la etiqueta <a> y el atributo href con el valor del esquema de la aplicación de mensajería. Por ejemplo:
+    <a href="whatsapp://send?text=Hola">Enviar mensaje de WhatsApp</a>
+
+
+**Etiquetas video y audio**
+1. <video>: se utiliza para insertar y reproducir videos en la página web. Ejemplo de cómo se ve la etiqueta:
+<video src="/ruta/o/enlace/del/video" controls></video>
+
+2. <audio>: se utiliza para insertar y reproducir archivos de audio en la página web. Ejemplo de cómo se ve la etiqueta:
+<audio src="/ruta/o/enlace/del/audio" controls></audio>
+
+Atributos adicionales que pueden tener las etiquetas <audio> y <video> son:
+
+1. autoplay: Este atributo permite que el audio o video se reproduzca automáticamente cuando la página se carga. Por ejemplo:
+    <video src="/ruta/o/enlace/del/video" autoplay></video>
+
+2. controls: Este atributo muestra los controles de reproducción estándar (como el botón de reproducción, pausa, volumen, etc.) para el audio o video. Por ejemplo:
+    <audio src="/ruta/o/enlace/del/audio" controls></audio>
+
+3. loop: Este atributo indica que el audio o video debe reproducirse en bucle, es decir, una vez que llega al final, se reinicia automáticamente. Por ejemplo:
+    <video src="/ruta/o/enlace/del/video" loop></video>
+
+4. muted: Este atributo silencia el audio del video. Por ejemplo:
+    <video src="/ruta/o/enlace/del/video" muted></video>
+
+5. preload: Este atributo especifica cómo se debe cargar el audio o video cuando la página se carga. Los posibles valores son "auto" (cargar completamente el archivo), "metadata" (cargar solo los metadatos) y "none" (no cargar el archivo). Por ejemplo:
+    <audio src="/ruta/o/enlace/del/audio" preload="auto"></audio>
+
+6. poster: Este atributo especifica una imagen que se mostrará mientras el video se está cargando o antes de que se reproduzca. Por ejemplo:
+    <video src="/ruta/o/enlace/del/video" poster="/ruta/o/enlace/de/imagen.jpg"></video>
+
+7. width y height: Estos atributos especifican el ancho y alto del video en píxeles. Por ejemplo:
+    <video src="/ruta/o/enlace/del/video" width="640" height="480"></video>
+
+8. crossorigin: Este atributo especifica cómo se deben manejar las solicitudes de recursos cruzados (como archivos de audio o video alojados en un dominio diferente). Los posibles valores son "anonymous" (realizar solicitudes sin enviar cookies o credenciales) y "use-credentials" (enviar cookies o credenciales en las solicitudes). Por ejemplo:
+    <audio src="/ruta/o/enlace/del/audio" crossorigin="anonymous"></audio>
+
+Estos son algunos de los atributos adicionales que se pueden utilizar con las etiquetas <audio> y <video>.
