@@ -1,0 +1,31 @@
+h1 {
+  color: #09f;
+}
+h2 {
+  color: darkred;
+}
+body {
+  background-color: #d3e1ee;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #09f;
+  text-decoration: none;
+}
+.btn {
+  background-color: #09f;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+#cv {
+  background: #09f;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  border-color: transparent;
+}

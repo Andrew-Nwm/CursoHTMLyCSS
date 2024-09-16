@@ -1,4 +1,4 @@
-**Apuntes Generales del curso de MiduDev**
+**Apuntes Generales HTML**
 
 1. HTML (HyperText Markup Language) es el lenguaje de marcado estándar utilizado para crear la estructura y el contenido de las páginas web. Se encarga de definir la estructura de los elementos en una página web, como encabezados, párrafos, listas, enlaces, imágenes, formularios, entre otros.
 
@@ -187,3 +187,24 @@ Atributos adicionales que pueden tener las etiquetas <audio> y <video> son:
     <audio src="/ruta/o/enlace/del/audio" crossorigin="anonymous"></audio>
 
 Estos son algunos de los atributos adicionales que se pueden utilizar con las etiquetas <audio> y <video>.
+
+
+
+
+**Apuntes Generales CSS**
+
+En cuanto a los selectores, podemos encontrar y usar dos de los más típicos:
+
+1. class:"selector-de-tipo-clase"
+    Ejemplo de uso:
+    .selector-de-tipo-clase{
+        background: #fff;
+        color: rojo;
+    }
+
+2. id:"selector-de-tipo-id"
+    Ejemplo de uso: 
+    #selector-de-tipo-clase{
+        background: #fff;
+        color: rojo;
+    }

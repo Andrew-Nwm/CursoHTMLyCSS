@@ -10,7 +10,10 @@
       content="Portfolio de Andrew Dev, Diseñador y programador"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link
+      rel="stylesheet"
+      href="/CursoDeCero/Andrew/MiduCourse/CSS/styles.css"
+    />
     <link rel="icon" type="image/jpg" href="/images/icon.jpg" />
     <meta
       property="og:tittle"
@@ -22,12 +25,9 @@
     />
     <meta property="og:image" content="/images/yo.jpg" />
     <meta property="og:image:alt" content="Imagen de AndrewDev" />
-    <style>
-      body {
-        background-color: #d0d0d0;
-      }
-    </style>
+    <meta property="og:url" content="https://andrewdev.com" />
   </head>
+
   <body>
     <header>
       <h1>Portfolio de Andrew Dev</h1>
@@ -45,16 +45,17 @@
       </nav>
     </header>
     <main>
-      <p>
-        +1 Año de experiencia como
-        <strong>diseñador web y programador y de software.</strong> Teniendo
-        Java como lenguaje principal y Figma como herramienta de diseño.
-      </p>
       <img
         title="Foto de perfil"
         alt="Una fotografía de una persona con camisa azul sonriendo a la cámara"
         src="/CursoDeCero/Andrew/MiduCourse/HTML/img/profile.jpg"
       />
+      <p>
+        +1 Año de experiencia como
+        <strong>diseñador web y programador y de software.</strong> Teniendo
+        Java como lenguaje principal y Figma como herramienta de diseño.
+      </p>
+      <button id="cv">Descargar CV</button>
       <h2 id="experiencia">Experiencia</h2>
       <ul>
         <li>Desarrollo de aplicaciones web con Wordpress + Elementor - 2023</li>
@@ -89,6 +90,8 @@
             </p>
             <footer><strong>Tecnologías utilizadas</strong></footer>
             <p>Java, Java, Swing, JPA, SQL, Figma y PHPMyAdmin</p>
+            <input type="button" value="Ver más" class="btn" />
+
             <li><strong>Diseño para Parki</strong></li>
             <p>
               En este proyecto, mi función fue diseñar la landing page de una
@@ -97,6 +100,7 @@
             </p>
             <footer><strong>Tecnología utilizada</strong></footer>
             <p>Figma</p>
+            <input type="button" value="Ver más" class="btn" />
           </ol>
         </article>
       </section>
