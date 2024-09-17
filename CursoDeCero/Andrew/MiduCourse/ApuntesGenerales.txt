@@ -208,3 +208,15 @@ En cuanto a los selectores, podemos encontrar y usar dos de los más típicos:
         background: #fff;
         color: rojo;
     }
+**Valores especiales de la herencia**
+    1. inherit: Hereda el valor de la propiedad del elemento padre. Si el padre no tiene un valor establecido, se hereda del abuelo, y así sucesivamente.
+    Ejemplo: color: inherit; hereda el color del elemento padre.
+
+    2. initial: Establece la propiedad a su valor inicial, es decir, el valor predeterminado del navegador.
+    Ejemplo: color: initial; establece el color en el valor predeterminado del navegador, que es usualmente negro.
+
+    3. unset: Si la propiedad se hereda del padre, se hereda el valor. Si no se hereda, se establece en su valor inicial.
+    Ejemplo: color: unset; hereda el color del padre si se hereda, de lo contrario, se establece en el valor predeterminado del navegador.
+
+    4. revert: Establece la propiedad en su valor predeterminado, como si no se hubiera establecido nunca en el árbol de elementos.
+    Ejemplo: color: revert; establece el color en su valor predeterminado, como si no se hubiera establecido nunca en el árbol de elementos.
