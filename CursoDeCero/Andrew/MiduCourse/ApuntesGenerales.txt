@@ -220,3 +220,117 @@ En cuanto a los selectores, podemos encontrar y usar dos de los más típicos:
 
     4. revert: Establece la propiedad en su valor predeterminado, como si no se hubiera establecido nunca en el árbol de elementos.
     Ejemplo: color: revert; establece el color en su valor predeterminado, como si no se hubiera establecido nunca en el árbol de elementos.
+
+*Pseudoclases de estado*
+    :active: Selecciona el elemento cuando se encuentra en un estado activo (por ejemplo, cuando se hace clic en un enlace).
+
+    :hover: Selecciona el elemento cuando se pasa el cursor del mouse sobre él.
+    
+    :focus: Selecciona el elemento cuando tiene el foco (por ejemplo, cuando se selecciona un campo de formulario).
+
+    :visited: Selecciona los enlaces que han sido visitados anteriormente.
+
+    :link: Selecciona los enlaces que no han sido visitados anteriormente.
+    
+*Pseudoclases de estructura*
+    :first-child: Selecciona el primer elemento hijo de un padre.
+    
+    :last-child: Selecciona el último elemento hijo de un padre.
+    
+    :nth-child(n): Selecciona el enésimo elemento hijo de un padre (donde n es un número).
+    
+    :nth-last-child(n): Selecciona el enésimo elemento hijo de un padre, empezando desde el final (donde n es un número).
+    
+    :only-child: Selecciona el elemento que es el único hijo de un padre.
+    
+    :first-of-type: Selecciona el primer elemento de un tipo específico (por ejemplo, el primer <p>).
+    
+    :last-of-type: Selecciona el último elemento de un tipo específico (por ejemplo, el último <p>).
+    
+    :nth-of-type(n): Selecciona el enésimo elemento de un tipo específico (donde n es un número).
+    
+    :nth-last-of-type(n): Selecciona el enésimo elemento de un tipo específico, empezando desde el final (donde n es un número).
+    
+    :only-of-type: Selecciona el elemento que es el único de su tipo.
+
+*Pseudoclases de contenido*
+    :empty: Selecciona los elementos que no tienen contenido (ni texto ni elementos hijos).
+
+    :lang(language): Selecciona los elementos que tienen el idioma especificado.
+
+*Pseudoclases de UI*
+
+    :enabled: Selecciona los elementos que están habilitados.
+
+    :disabled: Selecciona los elementos que están deshabilitados.
+
+    :checked: Selecciona los elementos que están seleccionados (por ejemplo, casillas de verificación o radios).
+
+    :indeterminate: Selecciona los elementos que tienen un estado indeterminado (por ejemplo, una casilla de verificación que no está seleccionada ni deseleccionada).
+
+*Operador de afectación por primer nivel*
+>: este operador tiene como función identificar el/los elementos hijos de nivel directo.
+    Ejemplo: 
+    Código HTML:
+        <article>
+            <p>Este es el contenido</p>
+            <p>Este es otro texto</p>
+        
+            <footer>
+                <p>Este es otro texto</p>
+            </footer>
+
+            <p>Este es el último texto</p>
+
+        </article>
+
+    Código CSS:
+    article{
+        font-size: 20px;
+    }
+    
+    article > p {
+        color: blue;
+    }
+
+En el anterior código se evidencia la funcionalidad del operador ">" en el código CSS. Esto identificará los elementos hijos de nivel directo en cuanto a la etiqueta señalada. Tomará y cambiará el color del texto a azul a todos los elementos "p" exceptuando al footer debido a que este no es un hijo de primer nivel.
+
+
+*Operador de afectación por segundo nivel*
+~: este operador tiene como función identificar los elementos hijos de segundo nivel, es decir que afecta a los elementos según sean indicados siempre y cuando se cumpla el segundo nivel.
+    Ejemplo:
+        Código HTML:
+            <article>
+                <span> Esto queda en negro</span>
+                <p>Párrafo 1</p>
+                <span>Esto está en rojo porque aparece después de la p</span>
+                <p>Whatever it may be, keep smiling</p>
+                <h1>Dream big</h1>
+                <span>Doesn't matter how many or what kind of nodes are in between, all spans froont the same parent 
+                after a paragraph are red</span>
+            </article>
+                <span>This span is not red because it doesn't share a parent with paragraph</span>
+
+        Código CSS:
+            p ~ span{
+                color: red;
+            }
+Este código tiene como finalidad estilar de color rojo todos los span que estén después de un párrafo.
+
+*Operador de afectación inmediatamente después*
++ : este operador tiene como función identificar los elementos hijos de nivel directo.
+    Ejemplo:
+        Código HTML:
+            <p>Hola</p>
+            <span>This span is red beacuse it's sharing a directly parent with a paragraph</span>
+        Código CSS:
+            p + span{
+                color: red;
+            }
+Este código tiene como finalidad estilar de color rojo el/los elementos de nivel directo.
+
+        
+        
+        
+        
+        

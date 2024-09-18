@@ -1,6 +1,6 @@
 body {
   background-color: #d3e1ee;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important; 
   margin: 0;
   padding: 0;
 }
@@ -21,14 +21,13 @@ h1 {
   padding-bottom: 1rem;
 }
 .description{
+  display: block;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
   padding: 1rem;
 }
-.description strong{
-  display: inline;
-}
+
 h2 {
   color: darkred;
 }
