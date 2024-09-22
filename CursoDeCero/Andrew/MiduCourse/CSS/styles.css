@@ -1,87 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 body {
-  background-color: #2f2134;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #111827;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
-}
-h1 {
-  color: #3b0b59;
-  font-size: 85px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-.photo{
-  display: block;
-  margin: 0 auto;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
-}
-.description{
-  display: block;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 1rem;
+  box-sizing: border-box;
 }
 
-h2 {
-  color: darkred;
-}
-a {
-  color: #fff;
-  text-decoration: none;
-}
-.topNavBar{
-  background-color: #09f;
-  color: white;
-  padding: 10px;
+#navBar{
+  background-color: #1f2937;
+  padding: .5px;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
-.btn {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    background-color: #09f;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    border: none;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    cursor: pointer;
-  }
-  .btn-projects{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin-top: 0;
-    margin-bottom: 1rem;
-    background-color: #09f;
-    color: #fff;
-    font-size: 15px;
-    font-weight: 500;
-    border: none;
-    padding: .5rem;
-    border-radius: .5rem;
-    cursor: pointer;
-  }
-#cv {
-  background: #09f;
+
+#navBar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #1f2937;
+  padding: 10px;
+}
+
+#navBar li {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#navBar a {
+  text-decoration: none;
   color: #fff;
-  padding: 6px;
+}
+
+.ProfilePic {
+  margin-right: 10px;
+  margin-left: 2rem;
+}
+
+.ProfilePic img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+h1 {
+  color: #09f;
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: left;
+  margin-top: 4rem;
+  margin-left: 2rem;
+}
+
+.description {
+  width: 50rem;
+  color: #fff;
+  word-wrap: break-word;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 2rem;
+}
+
+.socialButtons{
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+}
+
+.githubBtn {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #09f;
+  border-color: #09f;
+  color: #fff;
+  padding: 5px 10px;
   border-radius: 5px;
-  border-color: transparent;
+  cursor: pointer;
 }
-#cv:hover {
-  background: #0cf;
+.githubBtn:hover{
+  background-color: #fff;
+  color: #09f;
 }
-hr{
-  border: .5px solid #fff;
-  margin-top: 15px;
+
+.githubBtn-link {
+  text-decoration: none !important;
+}
+
+.githubBtn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+
+.linkedInBtn{
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  border-color: #09f;
+  color: #09f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.linkedInBtn:hover{
+  background-color: #fff;
+  color: #09f;
+}
+
+.linkedInBtn-link {
+  text-decoration: none !important;
+}
+
+.linkedInBtn img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  color: #fff;
+}
+
+.ttlSection{
+  color: #09f;
+
+}
+#skills{
+  margin-top: 4rem;
+  margin-left: 2rem;
+  color: #fff;
+}
+#about{
+  width: 50rem;
+  margin-top: 4rem;
+  margin-left: 2rem;
+  color: #fff;
+  word-wrap: break-word;
 }

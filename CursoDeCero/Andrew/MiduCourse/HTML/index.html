@@ -4,203 +4,118 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>PortFolio Andrew Dev</title>
-    <meta
-      name="description"
-      content="Portfolio de Andrew Dev, Diseñador y programador"
-    />
+    <title>Portfolio de Andrew Dev</title>
+    <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="/CursoDeCero/Andrew/MiduCourse/CSS/styles.css"
-    />
-    <link rel="icon" type="image/jpg" href="/images/icon.jpg" />
-    <meta
-      property="og:tittle"
-      content="Portfolio de un diseñador y desarrollador Jr"
-    />
-    <meta
-      property="og:description"
-      content="Portfolio de AndrewDev - Diseñador y Programador"
-    />
-    <meta property="og:image" content="/images/yo.jpg" />
-    <meta property="og:image:alt" content="Imagen de AndrewDev" />
-    <meta property="og:url" content="https://andrewdev.com" />
+    <link rel="stylesheet" href="/CursoDeCero/Andrew/MiduCourse/CSS/styles.css"/>
   </head>
-
   <body>
     <header>
-      <h1>Portfolio de Andrew Dev</h1>
-
-      <nav class="topNavBar">
-        <a href="#experiencia">Experiencia</a>
-        <a href="#tecnologias">Tecnologías</a>
-        <a href="#proyectos">Proyectos</a>
-        <a
-          href="https://github.com/Andrew-Nwm/"
-          target="_blank"
-          rel="noreferrer"
-          >Contacto
-        </a>
+      <nav id="navBar">
+        <div class="ProfilePic">
+          <img src="/CursoDeCero/Andrew/MiduCourse/img/PP.jpg" alt="GitHub Icon">
+        </div>
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#Skills">Skills</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
       </nav>
-    </header>
-    <main>
-      <img class="photo"
-        title="Foto de perfil"
-        alt="Una fotografía de una persona con camisa azul sonriendo a la cámara"
-        src="/CursoDeCero/Andrew/MiduCourse/HTML/img/profile.jpg"
-      />
+      <h1>Hi, I'm Andrew!</h1>
       <p class="description">
-        +1 year experience as a <strong class="bold">web designer and software developer.</strong>
-        <br>
-        Having Java as main programming language and Figma as a main design tool.
+        I'm 18 years old aspiring frontend web developer with a passion for
+        creating intuitive and engaging user interfaces. With a year of
+        experience in Java and growing expertise in web technologies, I'm
+        excited to bring creative solutions to the digital solutions to the
+        digital world.
       </p>
-      <button class="btn" id="cv">Download CV</button>
-      <hr>
-      <h2 id="experiencia">Experiencia</h2>
-      <ul>
-        <li>Desarrollo de aplicaciones web con Wordpress + Elementor - 2023</li>
-        <li>Diseñador Web para Parki - 2024</li>
-        <li>Desarrollo de aplicaciones de escritorio con Java - 2024</li>
-        <li>Diseñador Web para Vopper - 2024</li>
-      </ul>
+    </header>
 
-      <h2 id="tecnologias">Tecnologías</h2>
+    <div class="socialButtons">
+      <a href="https://github.com/Andrew-Nwm" target="_blank" class="githubBtn-link">
+        <button class="githubBtn">
+          <img src="/CursoDeCero/Andrew/MiduCourse/img/icons8-github-64.png" alt="GitHub Icon">
+          GitHub
+        </button>
+      </a>
 
-      <aside>
-        <header>
-          <h3>Mis tecnologías favoritas</h3>
-        </header>
-        <ol>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Figma</li>
+      <a href="https://www.linkedin.com/in/andres-rivas-baa5a431a/" target="_blank" class="linkedInBtn-link">
+        <button class="linkedInBtn">
+          <img src="/CursoDeCero/Andrew/MiduCourse/img/icons8-linkedin-48.png" alt="LinkedIn Icon">
+          LinkedIn
+        </button>
+      </a>
+    </div>
+
+    <main>
+      <section id="skills">
+        <h2 class="ttlSection"><> Skills</h2>
+        <ul>
           <li>HTML</li>
-        </ol>
-      </aside>
-      <section>
-        <article>
-          <header>
-            <h2 id="proyectos">Proyectos realizados</h2>
-          </header>
-          <ol>
-            <li><strong>Aplicación para veterinarias</strong></li>
-            <p>
-              Este proyecto fue realizado con el fin de brindar un entorno de
-              gestión personalizado para veterinarias y/o negocios afines.
-            </p>
-            <footer><strong>Tecnologías utilizadas</strong></footer>
-            <p>Java, Java, Swing, JPA, SQL, Figma y PHPMyAdmin</p>
-            <input type="button" value="Ver más" class="btn-projects" />
-
-            <li><strong>Diseño para Parki</strong></li>
-            <p>
-              En este proyecto, mi función fue diseñar la landing page de una
-              aplicación que tiene como finalidad ayudar a las personas a
-              encontrar y monitorear un parqueadero en Bogotá.
-            </p>
-            <footer><strong>Tecnología utilizada</strong></footer>
-            <p>Figma</p>
-            <input type="button" value="Ver más" class="btn-projects" />
-          </ol>
-        </article>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Java</li>
+        </ul>
       </section>
-
-      <section>
-        <h2>Preguntas frecuentes</h2>
-        <details open>
-          <summary>¿Cuáles son tus estudios?</summary>
-          <ul>
-            <li>
-              Estudié y me gradué como bachiller técnico en el colegio Ciudad de
-              Villavicencio en el año 2022
-            </li>
-            <li>
-              Estudié y me gradué como técnico asesor comercial en el Sena en el
-              año 2022
-            </li>
-            <li>
-              Me encuentro estudiando ingeniería de sistemas en la Fundación
-              Universitaria Compensar
-            </li>
-          </ul>
-        </details>
-
-        <details>
-          <summary>¿Cuál es tu lenguaje de programación favorito?</summary>
-          <p>Java</p>
-        </details>
-
-        <details>
-          <summary>¿Cuál es tu herramienta de diseño favorita?</summary>
-          <p>Figma</p>
-        </details>
-
-        <details>
-          <summary>¿Cuáles son tu hobbies?</summary>
+      <section id="about">
+        <h2 class="ttlSection">About me</h2>
+        <p>
+          I'm a self-taught developer with a passion for creating intuitive and
+          engaging user interfaces. I'm currently studying computer science at
+          the University of California, Berkeley, and I'm excited to bring
+          creative solutions to the digital world
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <div class="project">
+          <img
+            src="https://content.codecademy.com/courses/learn-html/projects/personal-portfolio/colmar-academy.png"
+            alt="Colmar Academy"
+          />
+          <h3>Colmar Academy</h3>
           <p>
-            Disfruto mucho de ver y hacer deporte; futbol principalmente.
-            Asimismo, me gusta mucho tocar la guitarra, leer y escribir.
+            A landing page for a fictional academy that offers courses in
+            design, technology, and business.
           </p>
-        </details>
+        </div>
+        <div class="project">
+          <img
+            src="https://content.codecademy.com/courses/learn-html/projects/personal-portfolio/colmar-academy.png"
+            alt="Colmar Academy"
+          />
+          <h3>Colmar Academy</h3>
+          <p>
+            A landing page for a fictional academy that offers courses in
+            design, technology, and business.
+          </p>
+        </div>
+        <div class="project">
+          <img
+            src="https://content.codecademy.com/courses/learn-html/projects/personal-portfolio/colmar-academy.png"
+            alt="Colmar Academy"
+          />
+          <h3>Colmar Academy</h3>
+          <p>
+            A landing page for a fictional academy that offers courses in
+            design, technology, and business.
+          </p>
+        </div>
       </section>
-      <section>
-        <h2>Curso de midudev sobre HTML</h2>
-        <iframe
-          style="width: 100%; aspect-ratio: 16/9"
-          src="https://www.youtube.com/embed/3nYLTiY5skU?si=78R5HhTGBRAwaudc"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
-      </section>
-
-      <section>
-        <h2>Formulario de contacto</h2>
-        <form method="post" action="/">
-          <fieldset>
-            <legend>Información personal</legend>
-            <div>
-              <label for="name">Nombre:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                placeholder="Escribe tu nombre"
-              />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                placeholder="Escribe tu email"
-              />
-            </div>
-
-            <datalist id="contactReason">
-              <option value="Teach some languages"></option>
-              <option value="Freelance work"></option>
-              <option value="Be part of the team"></option>
-              <option value="More information"></option>
-            </datalist>
-            <label
-              >¿Cuál es el motivo de tu contacto? <input list="contactReason"
-              name="contactReason"
-            </label>
-          </fieldset>
-
-          <input type="submit" value="Enviar credenciales" />
-        </form>
-      </section>
+      <section id="contact">
+        <h2>Contacto</h2>
+        <p>
+          Email:
     </main>
-    <footer>
-      <p>© 2024 Andrew Dev</p>
-    </footer>
   </body>
 </html>
