@@ -329,8 +329,48 @@ Este código tiene como finalidad estilar de color rojo todos los span que esté
             }
 Este código tiene como finalidad estilar de color rojo el/los elementos de nivel directo.
 
-        
-        
-        
-        
-        
+
+**Overflow**
+Se trata del desbordamiento de textos o imagenes.
+1. Por defecto viene el atributo overflow: visible. Este atributo indica que el contenido puede desbordarse sin problema.
+2. overflow: hidden. Este atributo indica que el contenido no puede desbordarse y oculta la parte que se sale del contenedor.
+3. overflow: scroll. Este atributo indica que el contenido se puede desbordar pero genera un scroll para poder navegar dentro de este.
+4. overflow: auto. Este atributo indica que el contenido se puede desbordar pero genera un scroll en base a los ajustes del dispositivo.
+5. overflow: clip. Este atributo indica que el contenido se puede desbordar pero se recorta en el contenedor.
+6. overflow: visible. Este atributo indica que el contenido puede desbordarse sin problema.
+7. overflow: inherit. Este atributo indica que el contenido hereda el valor de overflow del contenedor padre.
+8. overflow: initial. Este atributo indica que el contenido regresa a su valor por defecto.
+9. overflow: unset. Este atributo indica que el contenido se elimina el valor de overflow.
+
+**Position**
+1. static: los elementos se quedan en el sitio donde están definidos en el html y se van apilando a medida que se vayan agregando.
+2. absolute: determina las coordenadas en el html de forma absoluta.
+    Ejemplo de centrado de div con absolute (puede usarse para modales, mensajes en pantalla, etc):
+    Código HTML:
+
+    <section class="parent">
+        <div class="container">
+            container
+        </div>
+    </section>
+
+    Código CSS:
+    .container{
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+    }
+
+
+    Otra forma puede ser:
+    .container{
+    inset: 0;
+    margin: auto;
+    }
+
+3. relative: determina las coordenadas en el html de forma relativa para los elementos hijos.
+4. fixed: es parecido al absolute, excepto que este se puede modelar con coordenadas basadas no en el contenedor sino a la pantalla (puede usarse en navBars).
+5. sticky: es parecido al fixed, pero cambia a la hora del scroll, mientras que el fixed está directamente relacionado a la afectación del tamaño de la ventana, el sticky se basa en el contenedor en el que está, realiza scroll, siempre y cuando esté dentro del contenedor.
