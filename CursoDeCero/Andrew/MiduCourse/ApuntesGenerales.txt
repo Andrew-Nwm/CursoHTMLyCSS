@@ -401,6 +401,8 @@ Flexbox es un sistema de diseño basado en flexibilidad que trabaja de manera un
     b. flex-shrink: 1;
     c. flex-basis: 0;
 14. Para darle el doble, triple o cuadruple del espacio a un item en comparación con los demás podemos usar medidas relativas en el flex, por ejemplo, si queremos darle el doble de espacio ponemos flex: 2; en el item que queramos que tenga el doble del espacio en comparación con los demás.
+15. Las dos propiedades, flex-direction y flex-wrap pueden ser combinadas en una sola propiedad, que es la siguiente: flex-flow que tiene como fin combinarlas usando sus propiedades separadas por un espacio.
+Ejemplo: flex-flow: row wrap; 
 **Tipos de Justify-Content**
 1. justify-content: flex-start;
     Alinea los elementos al inicio del contenedor.

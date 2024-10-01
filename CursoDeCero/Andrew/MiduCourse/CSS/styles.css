@@ -187,3 +187,23 @@ h1 {
   padding-left: 2rem;
 }
 
+.skillsSection{
+  display: flex;
+  justify-content: left;
+  margin-top: 2rem;
+  justify-content: stretch;
+  width: 50%;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 50%;
+}
+
+.cards p{
+  background-color: #1F2937;
+  padding: .5rem 1rem;
+  border-radius: 5px;
+}
