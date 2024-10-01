@@ -374,3 +374,57 @@ Se trata del desbordamiento de textos o imagenes.
 3. relative: determina las coordenadas en el html de forma relativa para los elementos hijos.
 4. fixed: es parecido al absolute, excepto que este se puede modelar con coordenadas basadas no en el contenedor sino a la pantalla (puede usarse en navBars).
 5. sticky: es parecido al fixed, pero cambia a la hora del scroll, mientras que el fixed está directamente relacionado a la afectación del tamaño de la ventana, el sticky se basa en el contenedor en el que está, realiza scroll, siempre y cuando esté dentro del contenedor.
+
+*Z-Index*
+El Z-Index es un atributo que determina la importancia/nivel en el que se muestra el elemento basándose en el eje z (profundidad) siempre y cuando la position relative esté dentro del contenedor.
+
+**Flexbox**
+Flexbox es un sistema de diseño basado en flexibilidad que trabaja de manera unidireccional.
+1. flex-direction: row (por defecto) - los elementos se alinean en horizontal (en forma de fila).
+2. flex-direction: column - los elementos se alinean en vertical (en forma de columna).
+3. flex-direction: row-reverse - los elementos se alinean en horizontal pero en sentido contrario (en forma de fila).
+4. flex-direction: column-reverse - los elementos se alinean en vertical pero en sentido contrario (en forma de columna).
+
+5.flex-wrap: nowrap: si no hay suficiente espacio en el contenedor lo que va a hacer es reducir el espacio de los items con el fin de que quepa todo en la misma línea.
+6.flex-wrap: wrap: si hay suficiente espacio en el contenedor lo que va a hacer es hacer un salto de línea para que quepan todos los items.
+7. flex-grow: 0; los elementos no crecen.
+8. flex-grow: 1; los elementos crecen.
+9. flex-shrink: 1; los elementos pueden reducir su tamaño a un tamaño más pequeño que su flex-basis.
+10. flex-basis: auto; hace referencia al tamaño base; en este caso es auto, pero también puede hacerse en px, rem, etc.
+11. flex-basis: 0; Esto hace que todos los elementos tengan el mismo ancho sin importar su contenido.
+12. Con el flex: 1; podemos hacer las siguientes tres acciones de manera abreviada:
+    a. flex-grow: 1;
+    b. flex-shrink: 1;
+    c. flex-basis: 0;
+13. Con el flex: 0; podemos hacer las siguientes tres acciones de manera abreviada:
+    a. flex-grow: 0;
+    b. flex-shrink: 1;
+    c. flex-basis: 0;
+14. Para darle el doble, triple o cuadruple del espacio a un item en comparación con los demás podemos usar medidas relativas en el flex, por ejemplo, si queremos darle el doble de espacio ponemos flex: 2; en el item que queramos que tenga el doble del espacio en comparación con los demás.
+**Tipos de Justify-Content**
+1. justify-content: flex-start;
+    Alinea los elementos al inicio del contenedor.
+2. justify-content: flex-end;
+    Alinea los elementos al final del contenedor.
+3. justify-content: center;
+    Alinea los elementos en el centro del contenedor.
+4. justify-content: space-between;
+    Distribuye los elementos de manera uniforme, con un espacio igual entre cada elemento.
+5. justify-content: space-around;
+    Distribuye los elementos de manera uniforme, con un espacio igual alrededor de cada elemento.
+6. justify-content: space-evenly;
+    Distribuye los elementos de manera uniforme, con un espacio igual entre cada elemento y en los extremos del contenedor.
+Nota: podemos instanciar la separación entre los elementos utilizando la propiedad "gap", lo recomendable es usarlo con el justify-contenet: center.
+El align-content: center; sirve para centrar el contenido en el eje cruzado (column || row).
+
+**Selectores dee elementos hijos**
+    1. :first-child: selecciona el primer elemento hijo de un contenedor.
+    2. :last-child: selecciona el último elemento hijo de un contenedor.
+    3. :nth-child(n): selecciona el enésimo elemento hijo de un contenedor, donde n es un número.
+    4. :nth-last-child(n): selecciona el enésimo elemento hijo de un contenedor, contando desde el final, donde n es un número.
+    5. :only-child: selecciona el único elemento hijo de un contenedor.
+    6. :first-of-type: selecciona el primer elemento de un tipo específico (por ejemplo, el primer <p>) dentro de un contenedor.
+    7. :last-of-type: selecciona el último elemento de un tipo específico (por ejemplo, el último <p>) dentro de un contenedor.
+    8. :nth-of-type(n): selecciona el enésimo elemento de un tipo específico (por ejemplo, el tercer <p>) dentro de un contenedor.
+    9. :nth-last-of-type(n): selecciona el enésimo elemento de un tipo específico (por ejemplo, el tercer <p> desde el final) dentro de un contenedor.
+    10.:only-of-type: selecciona el único elemento de un tipo específico (por ejemplo, el único <p>) dentro de un contenedor.
