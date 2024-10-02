@@ -20,6 +20,7 @@ body {
   list-style: none;
   display: flex;
   padding: 10px;
+  gap: 1rem;
 }
 
 #navBar li {
@@ -31,16 +32,23 @@ body {
 #navBar a {
   text-decoration: none;
   color: #fff;
+  font-weight: 500;
 }
 
-#navBar ul li a:hover{
+#navBar ul li a:hover {
   color: #09f;
   transition: 0.4s;
 }
 
+.navlinks {
+  margin-right: 5rem;
+}
+
 .ProfilePic {
   margin-right: 10px;
-  margin-left: 2rem;
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .ProfilePic img {
@@ -50,22 +58,27 @@ body {
 }
 
 h1 {
-  color: #09f;
+  color: #0099ff;
   font-size: 2.5rem;
   font-weight: 900;
   text-align: left;
   margin-top: 4rem;
-  margin-left: 2rem;
+  margin-left: 5rem;
+}
+
+h1 span:hover {
+  color: #fff;
+  transition: 0.4s ease;
 }
 
 .description {
-  width: 45rem;
+  width: 42%;
   color: #fff;
   word-wrap: break-word;
   font-size: 1.2rem;
   font-weight: 400;
   text-align: left;
-  margin-left: 2rem;
+  margin-left: 5rem;
 }
 
 .socialButtons {
@@ -77,7 +90,7 @@ h1 {
 .githubBtn {
   font-size: 12px;
   font-weight: 600;
-  margin-left: 2rem;
+  margin-left: 5rem;
   display: flex;
   align-items: center;
   background-color: #09f;
@@ -91,11 +104,11 @@ h1 {
   background-color: #fff;
   color: #09f;
   border-color: #e6f5ff;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 .githubBtn-link {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .githubBtn img {
@@ -110,9 +123,9 @@ h1 {
   margin-left: 1rem;
   display: flex;
   align-items: center;
-  background-color: #000;
+  background-color: #09f;
   border-color: #09f;
-  color: #09f;
+  color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -122,11 +135,11 @@ h1 {
   background-color: #fff;
   color: #09f;
   border-color: #e6f5ff;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
 .linkedInBtn-link {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 .linkedInBtn img {
@@ -136,32 +149,32 @@ h1 {
   color: #fff;
 }
 
-.cvBtn{
+.contactBtn{
   font-size: 12px;
   font-weight: 600;
   margin-left: 1rem;
   display: flex;
   align-items: center;
-  background-color: #f60;
-  border-color: #f60;
+  background-color: #09f;
+  border-color: #09f;
   color: #fff;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-.cvBtn:hover {
+.contactBtn:hover {
   background-color: #fff;
   color: #09f;
   border-color: #e6f5ff;
-  transition: 0.4s;
+  transition: 0.4s ease;
 }
 
-.cvBtn-link {
-  text-decoration: none !important;
+.contactBtn-link {
+  text-decoration: none;
 }
 
-.cvBtn img {
+.contactBtn img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
@@ -173,37 +186,46 @@ h1 {
   font-size: 1.5rem;
   font-weight: 900;
   text-align: left;
+  margin-top: 2rem;
+  margin-left: 5rem;
+  margin-bottom: 0;
   margin-top: 4rem;
-  margin-left: 2rem;
 }
 
 #skills {
-  margin-top: 4rem;
   color: #fff;
 }
 
-#skills ul{
-  list-style: none;
-  padding-left: 2rem;
-}
-
-.skillsSection{
+.skillsSection {
   display: flex;
-  justify-content: left;
-  margin-top: 2rem;
-  justify-content: stretch;
-  width: 50%;
+  justify-content: flex-start;
+  margin-left: 5rem;
+  width: 42%;
 }
 
-.cards{
+.cards {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  width: 50%;
+  flex-wrap: wrap !important;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-.cards p{
-  background-color: #1F2937;
-  padding: .5rem 1rem;
-  border-radius: 5px;
+.cards p {
+  background-color: #1f2937;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  color: #fff;
+  min-width: 50px;
+  flex: 1 1 calc(20% - 0.5rem);
+  font-weight: 600;
+  margin-top: 1mm;
+}
+
+.cards p:hover {
+  transition: 0.3s ease;
+  background-color: #fff;
+  color: #09f;
+  transition: 0.4s;
+  cursor: pointer;
 }
