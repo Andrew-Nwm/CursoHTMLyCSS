@@ -93,17 +93,17 @@ h1 span:hover {
   margin-left: 5rem;
   display: flex;
   align-items: center;
-  background-color: #09f;
-  border-color: #09f;
-  color: #fff;
+  background-color: #09f !important;
+  border-color: #09f !important;
+  color: #fff !important;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 .githubBtn:hover {
-  background-color: #fff;
-  color: #09f;
-  border-color: #e6f5ff;
+  background-color: #fff !important;
+  color: #09f !important;
+  border-color: #e6f5ff !important;
   transition: 0.4s ease;
 }
 
@@ -123,18 +123,18 @@ h1 span:hover {
   margin-left: 1rem;
   display: flex;
   align-items: center;
-  background-color: #09f;
-  border-color: #09f;
-  color: #fff;
+  background-color: #09f !important;
+  border-color: #09f !important;
+  color: #fff !important;
   padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .linkedInBtn:hover {
-  background-color: #fff;
-  color: #09f;
-  border-color: #e6f5ff;
+  background-color: #fff !important;
+  color: #09f !important;
+  border-color: #e6f5ff !important;
   transition: 0.4s ease;
 }
 
