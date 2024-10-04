@@ -7,21 +7,15 @@
     <title>Portfolio de Andrew Dev</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="/CursoDeCero/Andrew/MiduCourse/CSS/styles.css"
-    />
+    <link rel="stylesheet" href="../CSS/styles.css" />
   </head>
   <body>
-    <header>
-      <nav id="navBar">
+    <nav class="navbar">
+      <div class="contenedor navbar-menu">
         <div class="ProfilePic">
-          <img
-            src="/CursoDeCero/Andrew/MiduCourse/img/PP.jpg"
-            alt="GitHub Icon"
-          />
+          <img src="../img/PP.jpg" alt="GitHub Icon" />
         </div>
-        <div class="navlinks">
+        <div class="navbar-menu_navlinks">
           <ul>
             <li>
               <a href="#about">About</a>
@@ -37,58 +31,51 @@
             </li>
           </ul>
         </div>
-      </nav>
-      <h1>Hi, <span>I'm Andrew!</span></h1>
+      </div>
+    </nav>
+
+    <header class="contenedor">
+      <h1 class="">Hi, <span>I'm Andrew!</span></h1>
       <p class="description">
         An 18-year-old young developer with a passion for programming and
         design. My goal is to create technological solutions that not only work
         efficiently, but will also offer an exceptional user experience.
       </p>
+
+      <div class="socialButtons">
+        <a
+          href="https://github.com/Andrew-Nwm"
+          target="_blank"
+          class="githubBtn-link"
+        >
+          <button class="githubBtn">
+            <img src="../img/icons8-github-64.png" alt="GitHub Icon" />
+            GitHub
+          </button>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/andres-rivas-baa5a431a/"
+          target="_blank"
+          class="linkedInBtn-link"
+        >
+          <button class="linkedInBtn">
+            <img src="../img/icons8-linkedin-48.png" alt="LinkedIn Icon" />
+            LinkedIn
+          </button>
+        </a>
+        <a href="#" target="_blank" class="contactBtn-link">
+          <button class="contactBtn">
+            <img src="../img/icons8-nuevo-post-100.png" alt="Cv Icon" />
+            Download CV
+          </button>
+        </a>
+      </div>
     </header>
 
-    <div class="socialButtons">
-      <a
-        href="https://github.com/Andrew-Nwm"
-        target="_blank"
-        class="githubBtn-link"
-      >
-        <button class="githubBtn">
-          <img
-            src="/CursoDeCero/Andrew/MiduCourse/img/icons8-github-64.png"
-            alt="GitHub Icon"
-          />
-          GitHub
-        </button>
-      </a>
-
-      <a
-        href="https://www.linkedin.com/in/andres-rivas-baa5a431a/"
-        target="_blank"
-        class="linkedInBtn-link"
-      >
-        <button class="linkedInBtn">
-          <img
-            src="/CursoDeCero/Andrew/MiduCourse/img/icons8-linkedin-48.png"
-            alt="LinkedIn Icon"
-          />
-          LinkedIn
-        </button>
-      </a>
-      <a href="#" target="_blank" class="contactBtn-link">
-        <button class="contactBtn">
-          <img
-            src="/CursoDeCero/Andrew/MiduCourse/img/icons8-nuevo-post-100.png"
-            alt="Cv Icon"
-          />
-          Download CV
-        </button>
-      </a>
-    </div>
-
     <main>
-      <section id="skills">
-        <h3 class="ttlSection"><> Skills</h3>
-        <div class="skillsSection">
+      <section id="skills" class="contenedor">
+        <h2 class="ttlSection"><> Skills</h2>
           <div class="cards">
             <p>Java</p>
             <p>HTML</p>
@@ -96,8 +83,7 @@
             <p>JavaScript</p>
             <p>Figma</p>
             <p>Java Swing</p>
-          </div>
-        </div>
+   
       </section>
     </main>
   </body>
